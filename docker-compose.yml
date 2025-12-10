@@ -4,7 +4,7 @@ services:
     ports:
       - "8181:80"
     volumes:
-      - ./workspace:/workspace
+      - ./workspace:/var/www/html
   db:
     image: mysql:8.0
     restart: always
