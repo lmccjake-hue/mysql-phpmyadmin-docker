@@ -1,4 +1,10 @@
 services:
+  webserver:
+    image: php:7.4.3-apache
+    ports:
+      - "8181:80"
+    volumes:
+      - ./workspace:/workspace
   db:
     image: mysql:8.0
     restart: always
