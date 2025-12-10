@@ -1,7 +1,7 @@
 {
   "name": "MySQL Dev Container",
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "db",
+  "service": "webserver",
   "workspaceFolder": "/workspace",
   "remoteEnv": {
     "MYSQL_PASSWORD": "${{ secrets.MYSQL_PASSWORD }}"
